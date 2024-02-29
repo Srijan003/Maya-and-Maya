@@ -4,6 +4,8 @@
 $w.onReady(function () {
   // Write your JavaScript here
 
+  // adding default package value to the product page
+
   const currentItem = $w("#dynamicDataset").getCurrentItem();
 
   const currentTitle = currentItem.title1;
