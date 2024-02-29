@@ -2,9 +2,21 @@
 // “Hello, World!” Example: https://learn-code.wix.com/en/article/hello-world
 
 $w.onReady(function () {
-    // Write your JavaScript here
+  // Write your JavaScript here
 
-    // To select an element by ID use: $w('#elementID')
+  // adding default package value to the product page
 
-    // Click 'Preview' to run your code
+  const currentItem = $w("#dynamicDataset").getCurrentItem();
+
+  const currentTitle = currentItem.title1;
+
+  console.log("Current Title:", currentTitle);
+
+  $w("#chosenPackage").value = currentTitle;
+
+  $w("#chosenPackage").disable();
+
+  // To select an element by ID use: $w('#elementID')
+
+  // Click 'Preview' to run your code
 });
